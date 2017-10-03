@@ -1,9 +1,59 @@
+*{
+	font-family: 'Dancing Script', cursive;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background:#02010a;
+}
+
 header{
+	height: 12vh;
+	border:1px solid black;
 	background:#5b7989;
 	border-radius: 10px 10px 0 0;
+
 }
 header h1{
+	display: inline-flex;
 	text-align: left;
 	color:white;
 	text-shadow: 2px 2px #02010a;
+	font-size: 2.5em;
+	vertical-align: center;
+	
+	margin-top: 2vh;
+	margin-left: 2vh;
+}
+
+#menu{
+	display:inline-flex;
+	float: right;
+	width: 275px;
+	height: 50px;
+	margin-top: 2vh;
+	margin-right: 2vw;
+	
+
+}
+
+#menu a{
+	width: 33.3%;
+	color: white;
+	font-size: 1.5em;
+	vertical-align: bottom;
+	
+	padding-top: 10px;
+}
+
+a[href='#']{
+	text-decoration: none;
+}
+
+@media (min-width: 900px) {
+	#contenedor{
+		width: 900px;
+		margin: 0 auto;
+	}
 }
