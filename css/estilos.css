@@ -10,7 +10,7 @@ body{
 
 header{
 	height: 12vh;
-	border:1px solid black;
+	
 	background:#5b7989;
 	border-radius: 10px 10px 0 0;
 
@@ -51,9 +51,102 @@ a[href='#']{
 	text-decoration: none;
 }
 
+#imgCentral{
+	width: 100%;
+	background:#82c3a6;
+}
+#imgCentral figure{
+	width:80%;
+	margin:0px auto;
+
+}
+
+#imgCentral figure img{
+	width: 100%;
+	margin:20px auto;
+	box-shadow: 2px 2px 2px black;
+}
+
+#imgSecundarias{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+	background:#d5c75f;
+	border:1px solid black;
+}
+
+#imgSecundarias figure{
+
+	margin:2vh auto;
+	
+	text-align: center;
+}
+
+#imgSecundarias figure img{
+	margin:2vh auto;
+}
+
+#img1{
+	box-shadow: 3px 3px 2px #82c3a6;
+	border:2px solid #82c3a6;
+	transform: rotate(0deg);
+	transition: transform 1s;
+}
+
+#img1:hover{
+	transform: rotate(10deg);
+}
+
+#img2{
+	box-shadow: 3px 3px 2px #82c3a6;
+	border:2px solid #82c3a6;
+	transform: translate();
+	transition: transform 0.5s;
+}
+
+#img2:hover{
+	transform: translate(20px,-5px);
+}
 @media (min-width: 900px) {
 	#contenedor{
 		width: 900px;
 		margin: 0 auto;
+	}
+
+	#imgSecundarias figure{
+		width:50%;
+		margin:0px auto;
+
+	}
+
+	#imgSecundarias figure img{
+		width:80%;
+		
+	}
+
+	#imgSecundarias figure figcaption{
+		width: 33.3%;
+		margin:0px auto;
+		
+	}
+
+	#imgSecundarias figure figcaption a{
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 899px) {
+	#imgSecundarias{
+		flex-wrap: wrap;
+	}
+
+	#imgSecundarias figure{
+		width: 100%;
+		margin: 0px auto;
+	}
+
+	#imgSecundarias figure img{
+		width:80%;
 	}
 }
